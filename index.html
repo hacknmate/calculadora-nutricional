@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Nutritional de Comidas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Nutritional de Comidas</h1>
+
+    <div class="selection">
+      <label for="foodSelect">Selecciona una comida:</label>
+      <select id="foodSelect">
+        <option value="Pollito">Pollito</option>
+        <option value="Bananita">Bananita</option>
+        <option value="Pavito">Pavito</option>
+        <option value="Yogourt">Yogourt Griego</option>
+      </select>
+      <label for="servingSize">Porcion (en gramos):</label>
+      <select id="servingSize">
+        <option value="50">50g</option>
+        <option value="100">100g</option>
+        <option value="150">150g</option>
+        <option value="200">200g</option>
+      </select>
+      <button onclick="addItem()">Miam Miam Miam...</button>
+    </div>
+
+    <h2>Comida Seleccionada con Valores Nutricionales</h2>
+    <table id="nutritionalValuesTable">
+      <thead>
+        <tr>
+          <th>Comida</th>
+          <th>Porcion (g)</th>
+          <th>Valor Calorico (kcal)</th>
+          <th>Carbohidratos (g)</th>
+          <th>Proteina (g)</th>
+        </tr>
+      </thead>
+      <tbody id="selectedItemsTableBody">
+        <!-- Selected items will appear here -->
+      </tbody>
+    </table>
+
+    <h2>Consumo Total Diario</h2>
+    <table id="totalIntakeTable">
+      <thead>
+        <tr>
+          <th>Valor Nutritional</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Calorias (kcal)</td>
+          <td id="totalCalories">0</td>
+        </tr>
+        <tr>
+          <td>Carbos (g)</td>
+          <td id="totalCarbs">0</td>
+        </tr>
+        <tr>
+          <td>Proteina (g)</td>
+          <td id="totalProtein">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
