@@ -1,3 +1,7 @@
+
+![preview](https://github.com/0xvicioso/calculadora-nutricional/assets/145522834/8da70cec-54d7-4238-b8d4-f794affac418)
+
+
 # calculadora-nutricional
 Una calculadora nutricional lista para ser editada a tu conveniencia
 
